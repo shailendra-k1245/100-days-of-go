@@ -5,8 +5,22 @@ func main(){
 	var j = 15
 	var txt = "Hello world!"
 	var t2 = "Hello"
+	
 
 	// General formatting verbs
+	// generalFormattingVerbs(i,txt)
+
+	// Integer formatting verbs
+	integerFormattingVerbs(j)
+
+	// String formatting Verbs
+	stringFormattingVerbs(t2)
+
+	// Boolean formatting verbs
+	boolFormattinVerbs()
+}
+
+func generalFormattingVerbs(i float64, txt string){
 	fmt.Printf("%v\n",i)
 	fmt.Printf("%#v\n",i)
 	fmt.Printf("%v%%\n",i)
@@ -16,8 +30,9 @@ func main(){
 	fmt.Printf("%#v\n",txt)
 	fmt.Printf("%T\n",txt)
 	fmt.Print("\n")
+}
 
-	// Integer formatting verbs
+func integerFormattingVerbs(j int){
 	fmt.Printf("%b\n", j)
 	fmt.Printf("%d\n", j)
 	fmt.Printf("%+d\n", j)
@@ -29,9 +44,6 @@ func main(){
 	fmt.Printf("%4d\n", j)
 	fmt.Printf("%-4d\n", j)
 	fmt.Printf("%04d\n", j)
-
-	// String formatting Vervs
-	stringFormattingVerbs(t2)
 }
 
 func stringFormattingVerbs(txt string){
@@ -44,3 +56,10 @@ func stringFormattingVerbs(txt string){
 
 }
 
+func boolFormattinVerbs(){
+	var i = true
+	var j = false
+	fmt.Printf("%t\n",i)
+	fmt.Printf("%t\n",j)
+	fmt.Println(j)
+}
